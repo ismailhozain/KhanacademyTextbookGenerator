@@ -20,7 +20,8 @@
   height: 100vh;
 }
 .titleText {
-    padding-bottom: 70vh;
+    padding-top: 35vh;
+    padding-bottom: 45vh;
 }
 .section {
   height: 100vh;
@@ -41,4 +42,8 @@
 }
 .bio {
   max-width: 30vw;
+}
+.menuClass {
+  width: 256px;
+  position: fixed;
 }

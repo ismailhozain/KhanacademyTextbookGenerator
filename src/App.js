@@ -2,13 +2,15 @@ import React from 'react';
 import './App.css';
 import { Menu, Button } from 'antd';
 import {
-    AppstoreOutlined,
+    DashboardOutlined,
+    ToolOutlined,
     MenuUnfoldOutlined,
     MenuFoldOutlined,
-    PieChartOutlined,
+    TrophyOutlined,
+    UnlockOutlined,
     DesktopOutlined,
+    ProjectOutlined,
     InboxOutlined,
-    MailOutlined,
 } from '@ant-design/icons';
 import 'antd/dist/antd.css';
 import {DownOutlined} from '@ant-design/icons';
@@ -28,7 +30,7 @@ class App extends React.Component {
         return (
             <div>
                 <div className="App">
-                    <div style={{width: 256 }}>
+                    <div className={"menuClass"}>
                         <Button type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
                             {React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined)}
                         </Button>
@@ -39,7 +41,7 @@ class App extends React.Component {
                             inlineCollapsed={!this.state.collapsed}
                         >
                             <Menu.Item key="1">
-                                <PieChartOutlined />
+                                <DashboardOutlined />
                                 <span>Home</span>
                             </Menu.Item>
                             <Menu.Item key="2">
@@ -47,19 +49,19 @@ class App extends React.Component {
                                 <span>About</span>
                             </Menu.Item>
                             <Menu.Item key="3">
-                                <InboxOutlined />
+                                <UnlockOutlined />
                                 <span>Skills</span>
                             </Menu.Item>
                             <Menu.Item key="4">
-                                <InboxOutlined />
+                                <ToolOutlined />
                                 <span>Tools</span>
                             </Menu.Item>
                             <Menu.Item key="5">
-                                <InboxOutlined />
+                                <TrophyOutlined />
                                 <span>Achievements</span>
                             </Menu.Item>
                             <Menu.Item key="6">
-                                <InboxOutlined />
+                                <ProjectOutlined />
                                 <span>Projects</span>
                             </Menu.Item>
                             <Menu.Item key="7">
